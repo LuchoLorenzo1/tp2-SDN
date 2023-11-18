@@ -1,0 +1,7 @@
+# Preguntas a responder
+1. ¿Cuál es la diferencia entre un Switch y un router? ¿Qué tienen en común?
+    > El objetivo principal de un router es conectar varias redes simultáneamente (se utiliza en el núcleo de la red) y se considera que es un dispositivo que trabaja en la capa de red. Mientras que un switch permite que distintos dispositivos conectados puedan compartir información sin importar su localización dentro de un edificio o campus (se utiliza en redes de acceso), y además se considera que trabaja en la capa de enlace. Lo que tienen en común es que ambos son dispositivos que toman los paquetes que reciben por sus puertos de entrada y los envían por aquellos puertos de salida que les permitan llegar a sus respectivos destinos.
+2. ¿Cuál es la diferencia entre un Switch convencional y un Switch OpenFlow?
+    > En uno convencional, el plano de datos y de control se encontraban implementados y funcionaban en el mismo dispositivo. En cambio, en uno OpenFlow sólo encontraremos que funciona el plano de datos en el dispositivo, y todas las funciones características del plano de control (cálculo de tablas de flujo, etc.) son llevadas a cabo por un dispositivo externo llamado controller con quien el switch mantiene una comunicación constante mediante mensajes del protocolo.
+3. ¿Se pueden reemplazar todos los routers de la Intenet por Switches OpenFlow? Piense en el escenario interASes para elaborar su respuesta
+    > Respuesta a 3
