@@ -26,14 +26,14 @@ ADDR = 10.0.0.4
 PORT = 3000
 
 udp_client:
-	python udp_client.py ${MSG} ${ADDR} ${PORT}
+	python scripts/clients/udp_client.py ${MSG} ${ADDR} ${PORT}
 
 udp_server:
-	python udp_server.py ${PORT}
+	python scripts/servers/udp_server.py ${PORT}
 
 tcp_client:
-	python tcp_client.py ${MSG} ${ADDR} ${PORT}
+	python scripts/clients/tcp_client.py ${MSG} ${ADDR} ${PORT}
 
 tcp_server:
-	python tcp_server.py ${PORT}
+	python scripts/servers/tcp_server.py ${PORT}
 

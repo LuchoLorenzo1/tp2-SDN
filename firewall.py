@@ -1,8 +1,6 @@
 from pox.core import core
 import pox.openflow.libopenflow_01 as of
 from pox.lib.revent import EventMixin
-from pox.lib.addresses import IPAddr
-import pox.lib.packet.packet_utils as pkt_ut
 
 log = core.getLogger()
 
@@ -33,37 +31,38 @@ class Firewall(EventMixin):
 
     def _handle_ConnectionUp(self, event):
         if event.dpid != self.firewall_dpid:
-            log.debug("ESTE NO FUE ASIGNADO FIREWALL " + str(event.dpid))
             return
-        log.debug("ESTE SI FUE ASIGNADO FIREWALL " + str(event.dpid))
 
-        # match_ip = of.ofp_match()
-        # match_ip.nw_src = (IPAddr(self.host1_ip), 32)
-        # match_ip.nw_proto = 17
-        # match_ip.tp_dst = 5001
-        # flow_mod = of.ofp_flow_mod()
-        # flow_mod.match = match_ip
-        # event.connection.send(flow_mod)
+        multiple_match = of.ofp_match(
+            nw_src=self.host1_ip, tp_dst=5001, nw_proto=17, dl_type=0x800
+        )
+        flow_mod = of.ofp_flow_mod()
+        flow_mod.match = multiple_match
+        event.connection.send(flow_mod)
 
-        # match_ip = of.ofp_match()
-        # match_ip.nw_src = (IPAddr(self.banned_ip2), 32)
-        # match_ip.nw_dst = (IPAddr(self.banned_ip1), 32)
-        # flow_mod = of.ofp_flow_mod()
-        # flow_mod.match = match_ip
-        # event.connection.send(flow_mod)
+        match_ip = of.ofp_match(
+            nw_src=self.banned_ip2, nw_dst=self.banned_ip1, dl_type=0x800
+        )
+        flow_mod = of.ofp_flow_mod()
+        flow_mod.match = match_ip
+        event.connection.send(flow_mod)
 
-        # match_ip = of.ofp_match()
-        # match_ip.nw_src = (IPAddr(self.banned_ip1), 32)
-        # match_ip.nw_dst = (IPAddr(self.banned_ip2), 32)
-        # flow_mod = of.ofp_flow_mod()
-        # flow_mod.match = match_ip
-        # event.connection.send(flow_mod)
+        match_ip = of.ofp_match(
+            nw_src=self.banned_ip1, nw_dst=self.banned_ip2, dl_type=0x800
+        )
+        flow_mod = of.ofp_flow_mod()
+        flow_mod.match = match_ip
+        event.connection.send(flow_mod)
 
-        # match_port = of.ofp_match()
-        # match_port.tp_dst = 80
-        # flow_mod = of.ofp_flow_mod()
-        # flow_mod.match = match_port
-        # event.connection.send(flow_mod)
+        match_port = of.ofp_match(tp_dst=80, nw_proto=17, dl_type=0x800)
+        flow_mod = of.ofp_flow_mod()
+        flow_mod.match = match_port
+        event.connection.send(flow_mod)
+
+        match_port = of.ofp_match(tp_dst=80, nw_proto=6, dl_type=0x800)
+        flow_mod = of.ofp_flow_mod()
+        flow_mod.match = match_port
+        event.connection.send(flow_mod)
 
 
 def launch(config="config.txt"):
