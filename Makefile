@@ -6,7 +6,7 @@ install:
 	mv firewall.py pox/ext/
 
 pox:
-	pox/pox.py firewall forwarding.l2_learning log.level --DEBUG samples.pretty_log
+	pox/pox.py firewall forwarding.l2_learning log.level --DEBUG samples.pretty_log log --file=pox.log
 
 TOPO_FILE = topology.py
 SWITCH_TYPE = ovsk

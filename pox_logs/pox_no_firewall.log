@@ -1,0 +1,92 @@
+DEBUG:core:POX 0.3.0 (dart) going up...
+DEBUG:core:Running on CPython (2.7.18/Jul 1 2022 10:30:50)
+DEBUG:core:Platform is Linux-5.15.0-88-generic-x86_64-with-LinuxMint-21.1-vera
+INFO:core:POX 0.3.0 (dart) is up.
+DEBUG:openflow.of_01:Listening on 0.0.0.0:6633
+INFO:openflow.of_01:[00-00-00-00-00-01 2] connected
+DEBUG:forwarding.l2_learning:Connection [00-00-00-00-00-01 2]
+INFO:openflow.of_01:[00-00-00-00-00-04 3] connected
+DEBUG:forwarding.l2_learning:Connection [00-00-00-00-00-04 3]
+INFO:openflow.of_01:[00-00-00-00-00-03 4] connected
+DEBUG:forwarding.l2_learning:Connection [00-00-00-00-00-03 4]
+INFO:openflow.of_01:[00-00-00-00-00-02 5] connected
+DEBUG:forwarding.l2_learning:Connection [00-00-00-00-00-02 5]
+DEBUG:openflow.of_01:1 connection aborted
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:01.1 -> 00:00:00:00:00:02.2
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:02.2 -> 00:00:00:00:00:01.1
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:01.1 -> 00:00:00:00:00:03.3
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:01.1 -> 00:00:00:00:00:03.2
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:01.1 -> 00:00:00:00:00:03.2
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:01.3 -> 00:00:00:00:00:03.1
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:03.1 -> 00:00:00:00:00:01.3
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:03.2 -> 00:00:00:00:00:01.1
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:03.2 -> 00:00:00:00:00:01.1
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:03.3 -> 00:00:00:00:00:01.1
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:01.1 -> 00:00:00:00:00:04.3
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:01.1 -> 00:00:00:00:00:04.2
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:01.1 -> 00:00:00:00:00:04.2
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:01.3 -> 00:00:00:00:00:04.2
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:04.2 -> 00:00:00:00:00:01.3
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:04.2 -> 00:00:00:00:00:01.1
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:04.2 -> 00:00:00:00:00:01.1
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:04.3 -> 00:00:00:00:00:01.1
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:02.2 -> 00:00:00:00:00:01.1
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:01.1 -> 00:00:00:00:00:02.2
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:02.2 -> 00:00:00:00:00:03.3
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:02.1 -> 00:00:00:00:00:03.2
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:02.1 -> 00:00:00:00:00:03.2
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:02.3 -> 00:00:00:00:00:03.1
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:03.1 -> 00:00:00:00:00:02.3
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:03.2 -> 00:00:00:00:00:02.1
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:03.2 -> 00:00:00:00:00:02.1
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:03.3 -> 00:00:00:00:00:02.2
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:02.2 -> 00:00:00:00:00:04.3
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:02.1 -> 00:00:00:00:00:04.2
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:02.1 -> 00:00:00:00:00:04.2
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:02.3 -> 00:00:00:00:00:04.2
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:04.2 -> 00:00:00:00:00:02.3
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:04.2 -> 00:00:00:00:00:02.1
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:04.2 -> 00:00:00:00:00:02.1
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:04.3 -> 00:00:00:00:00:02.2
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:03.1 -> 00:00:00:00:00:01.3
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:03.2 -> 00:00:00:00:00:01.1
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:03.2 -> 00:00:00:00:00:01.1
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:03.3 -> 00:00:00:00:00:01.1
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:01.1 -> 00:00:00:00:00:03.3
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:01.1 -> 00:00:00:00:00:03.2
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:01.1 -> 00:00:00:00:00:03.2
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:01.3 -> 00:00:00:00:00:03.1
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:03.1 -> 00:00:00:00:00:02.3
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:03.2 -> 00:00:00:00:00:02.1
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:03.2 -> 00:00:00:00:00:02.1
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:03.3 -> 00:00:00:00:00:02.2
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:02.2 -> 00:00:00:00:00:03.3
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:02.1 -> 00:00:00:00:00:03.2
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:02.1 -> 00:00:00:00:00:03.2
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:02.3 -> 00:00:00:00:00:03.1
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:03.1 -> 00:00:00:00:00:04.2
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:04.2 -> 00:00:00:00:00:03.1
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:04.2 -> 00:00:00:00:00:01.3
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:04.2 -> 00:00:00:00:00:01.1
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:04.2 -> 00:00:00:00:00:01.1
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:04.3 -> 00:00:00:00:00:01.1
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:01.1 -> 00:00:00:00:00:04.3
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:01.1 -> 00:00:00:00:00:04.2
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:01.1 -> 00:00:00:00:00:04.2
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:01.3 -> 00:00:00:00:00:04.2
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:04.2 -> 00:00:00:00:00:02.3
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:04.2 -> 00:00:00:00:00:02.1
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:04.2 -> 00:00:00:00:00:02.1
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:04.3 -> 00:00:00:00:00:02.2
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:02.2 -> 00:00:00:00:00:04.3
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:02.1 -> 00:00:00:00:00:04.2
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:02.1 -> 00:00:00:00:00:04.2
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:02.3 -> 00:00:00:00:00:04.2
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:04.2 -> 00:00:00:00:00:03.1
+DEBUG:forwarding.l2_learning:installing flow for 00:00:00:00:00:03.1 -> 00:00:00:00:00:04.2
+INFO:openflow.of_01:[00-00-00-00-00-01 2] closed
+INFO:openflow.of_01:[00-00-00-00-00-04 3] closed
+INFO:openflow.of_01:[00-00-00-00-00-03 4] closed
+INFO:openflow.of_01:[00-00-00-00-00-02 5] closed
+INFO:core:Going down...
+INFO:core:Down.
