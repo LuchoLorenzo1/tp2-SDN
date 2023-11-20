@@ -1,10 +1,13 @@
 # Preguntas a responder
 1. ¿Cuál es la diferencia entre un Switch y un router? ¿Qué tienen en común?
-    > El objetivo principal de un router es conectar varias redes simultáneamente (se utiliza en el núcleo de la red) y se considera que es un dispositivo que trabaja en la capa de red. En cambio, un switch permite que distintos dispositivos conectados puedan compartir información sin importar su localización dentro de un edificio o campus (se utiliza en redes de acceso). Se considera que un switch trabaja en la capa de enlace. Lo que tienen en común es que ambos son dispositivos que toman los paquetes recibidos mediante sus puertos de entrada y los envían por aquellos puertos de salida que les permitan llegar a sus respectivos destinos finales.
+    * El objetivo principal de un router es conectar varias redes simultáneamente (se utiliza en el núcleo de la red) y se considera que es un dispositivo que trabaja en la capa de red. En cambio, un switch permite que distintos dispositivos conectados puedan compartir información sin importar su localización dentro de un edificio o campus (se utiliza en redes de acceso). Se considera que un switch trabaja en la capa de enlace. Lo que tienen en común es que ambos son dispositivos que toman los paquetes recibidos mediante sus puertos de entrada y los envían por aquellos puertos de salida que les permitan llegar a sus respectivos destinos finales.
 2. ¿Cuál es la diferencia entre un Switch convencional y un Switch OpenFlow?
-    > En uno convencional, el plano de datos y de control se encuentran implementados y funcionan en el mismo dispositivo. En cambio, en un switch OpenFlow sólo se ejecutarán acciones propias del plano de datos. Todas las funciones características del plano de control (cálculo de tablas de flujo, etc.) son llevadas a cabo por un dispositivo externo llamado controller. Es con este último con quien el switch mantiene una comunicación constante mediante mensajes propios del protocolo.
+    * En uno convencional, el plano de datos y de control se encuentran implementados y funcionan en el mismo dispositivo. En cambio, en un switch OpenFlow sólo se ejecutarán acciones propias del plano de datos. Todas las funciones características del plano de control (cálculo de tablas de flujo, etc.) son llevadas a cabo por un dispositivo externo llamado controller. Es con este último con quien el switch mantiene una comunicación constante mediante mensajes propios del protocolo.
 3. ¿Se pueden reemplazar todos los routers de la Intenet por Switches OpenFlow? Piense en el escenario interASes para elaborar su respuesta
-    > 
+	* No lo reemplazariamos por las siguientes dos razones:
+		1. Eficiencia. Los routes que no requieren tanta lógica/funcionalidad es mejor que estén implementados en hardware ya que su tiempo de procesamiento es ordenes de magnitud más rápido. Por lo que si todos fuesen switches openflow toda la red estaría mucho más congestionada.
+		2. Protocolos InterASes: los switches openflow (por lo menos el POX) no implementan los protocolos BGP y OSPF, por lo que sería imposible poder dar a conocer direcciones en una red que solo tenga switches openflow. Con esto entendemos que no hay un controlador lo suficientemente amplio como para que cumpla con todos los requerimientos que se pueden presentar en TODO Internet.
+  
 
 # Simulación
 
