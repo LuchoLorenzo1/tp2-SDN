@@ -1,1 +1,4 @@
-switches=4
+firewall_dpid=2
+banned_ip1=10.0.0.4
+banned_ip2=10.0.0.1
+host1_ip=10.0.0.1

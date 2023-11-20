@@ -1,7 +1,16 @@
 # TP2-SDN
-### Como correr
+
+### Instalar POX en el proyecto
 ```
-Mininet: sudo mn --custom topology.py --arp --mac --switch ovsk --topo mytopo,4 --controller remote 
-Para POX: pox/pox.py samples.spanning_tree forwarding.l2_learning --port=6653
-Pero en vez de samples.spanning_tree con lo nuestro?
+$ make install
+```
+
+### Ejecutar controlador POX
+```
+$ make pox
+```
+
+### Crear topología custom de mininet
+```
+$ make mn
 ```
