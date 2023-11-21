@@ -1,4 +1,4 @@
-.PHONY: install pox mn mn_clean udp_client tcp_client udp_server tcp_server
+.PHONY: install pox mn mn_clean
 
 install:
 	git clone http://github.com/noxrepo/pox
@@ -20,20 +20,3 @@ mn: mn_clean
 
 mn_clean:
 	mn -c
-
-MSG = bienvenido
-ADDR = 10.0.0.4
-PORT = 3000
-
-udp_client:
-	python scripts/clients/udp_client.py ${MSG} ${ADDR} ${PORT}
-
-udp_server:
-	python scripts/servers/udp_server.py ${PORT}
-
-tcp_client:
-	python scripts/clients/tcp_client.py ${MSG} ${ADDR} ${PORT}
-
-tcp_server:
-	python scripts/servers/tcp_server.py ${PORT}
-
