@@ -1,6 +1,9 @@
 {
     "firewall_dpid": 1,
-    "host1_ip": "10.0.0.1",
+    "multirule_port": 5001,
+    "multirule_proto": 17,
+    "multirule_host_ip": "10.0.0.1",
     "banned_ip1": "10.0.0.1",
-    "banned_ip2": "10.0.0.4"
+    "banned_ip2": "10.0.0.4",
+    "banned_port": 80
 }
